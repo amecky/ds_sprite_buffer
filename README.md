@@ -1,8 +1,17 @@
 # ds_sprite_buffer
 
-SpriteBatchBuffer which can be used along with the diesel renderer
+SpriteBatchBuffer which can be used along with the diesel renderer. it is a single header file which you
+can copy to your project. 
 
 ## How to use it
+
+In general only the API and classes are visible. So at point you need to include the implementation as well.
+You do this be definining SPRITE_IMPLEMENTATION right before the include. You only need to do this once.
+
+```c
+#define SPRITE_IMPLEMENTATION
+#include <SpriteBatchBuffer.h>
+```
 
 First you need to initialize the SpriteBatchBuffer:
 
